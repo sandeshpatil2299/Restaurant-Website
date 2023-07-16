@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* navbar */
+
+nav
+{
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+   position: sticky;
+   background-color: #fff;
+   top: 0;
+   z-index: 55;
+}
+
+.navigation
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+.navigation .mainLogo img
+{
+   max-width: 185px;
+}
+
+.navigation .bar
+{
+   font-size: 30px;
+   cursor: pointer;
+}
+
+/* Highlight Section */
+
+.highlights
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+}
+
+.highlights .highImg img
+{
+   max-width: 550px;
+}
+
+.highlights .highContent h4
+{
+   color: #fff;
+   background-color: green;
+   display: inline-block;
+   padding: 6px 18px;
+   margin-bottom: 25px;
+   font-weight: 400;
+}
+
+.highlights .highContent h1
+{
+   align-self: flex-start;
+   font-size: 60px;
+   word-spacing: 2px;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+}
+
+.highlights .highContent p
+{
+   font-weight: 500;
+   margin-bottom: 28px;
+}
+
+.highlights .highBtn button
+{
+   text-decoration: none;
+   border: none;
+   background-color: rgb(255, 225, 124);
+   font-size: 22px;
+   padding: 10px 30px; 
+   color: #fff;
+   font-weight: 500;
+   cursor: pointer;
+}
+.highlights .highBtn button:hover
+{
+   background-color: rgb(255, 213, 75);
+}
+
+
+/* Card section */
+
+.card img
+{
+   max-width: 110px;
+}
+
+.cards
+{
+   display: flex;
+   gap: 15px;
+   margin-top: 30px;
+}
+
+.card
+{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   padding: 10px;
+   transition: 0.3s ease-in-out;
+}
+
+.card:hover
+{
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+   transition: 0.3s ease-in-out;
+}
+
+/* Divider */
+.divider
+{
+   border-bottom: 2px solid silver;
+   margin: 40px 0;
+}
+
+/* Image View */
+
+.foodContent
+{
+   text-align: center;
+   margin: 80px 0 30px 0;
+}
+.foodContent h2
+{
+   margin-bottom: 25px;
+   background-color: green;
+   color: #fff;
+   padding: 10px 30px;
+   font-weight: 400;
+   display: inline-block;
+}
+.foodContent h1
+{
+   font-size: 35px;
+   font-weight: 500;
+}
+.pic img
+{
+   width: 100%;
+   height: 100%;
+   transition: 0.3s ease-in-out;
+}
+.pic img:hover
+{
+   transform: scale(1.02);
+   transition: 0.3s ease-in-out;
+}
+.imgView
+{
+   display: grid;
+   gap: 20px;
+   grid-template-areas:
+   "P1 P1 P2 P3"
+   "P1 P1 P2 P7"
+   "P4 P5 P6 P7";
+   margin-bottom: 80px;
+}
+.pic1
+{
+   grid-area: P1;
+}
+.pic2
+{
+   grid-area: P2;
+}
+.pic3
+{
+   grid-area: P3;
+}
+.pic4
+{
+   grid-area: P4;
+}
+.pic5
+{
+   grid-area: P5;
+}
+.pic6
+{
+   grid-area: P6;
+}
+.pic7
+{
+   grid-area: P7;
+}
+
+/* footer section */
+footer
+{
+   background-color: #fff0db;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 50px;
+   padding: 30px 0 50px 0;
+}
+.same1
+{
+   padding: 10px;
+}
+.mainLink,
+.support
+{
+   width: 180px;
+}
+.footerLogo img
+{
+   width: 180px;
+}
+footer h1
+{
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+footer ul li a
+{
+   text-decoration: none;
+   color: #000;
+}
+footer ul li
+{
+   list-style: none;
+   font-size: 14px;
+   margin-bottom: 2px;
+}
+.join
+{
+   width: 300px;
+}
+.join input
+{
+   padding: 3px;
+   width: 100%;
+   margin-bottom: 10px;
+}
+.join .followUs .social
+{
+   display: flex;
+   gap: 13px;
+}
+.size a
+{
+   font-size: 20px;
+   color: black;
+}
+.size i
+{
+   transition: 0.1s ease-in-out;
+   height: 40px;
+}
+.same1 ul li:hover
+{
+   font-weight: 600;
+   transition: 0.3s ease-in-out;
+}
+
+.social .facebook i:hover
+{
+   color: #3b5998;
+   transform: scale(1.2);
+   transition: 0.1s ease-in-out;
+}
+.social .twitter i:hover
+{
+   color: #1DA1F2;
+   transform: scale(1.2);
+   transition: 0.1s ease-in-out;
+
+}
+.social .instagram i:hover
+{
+   color:#cd486b;
+   transform: scale(1.2);
+   transition: 0.1s ease-in-out;
+
+}
+.social .youtube i:hover
+{
+   color: #FF0000;
+   transform: scale(1.2);
+   transition: 0.1s ease-in-out;
+
+}
+
+@media (max-width: 911px)
+{
+   .highlights
+   {
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .highContent
+   {
+      padding: 10px;
+   }
+
+   .highImg
+   {
+      display: flex;
+      justify-content: center;
+   }
+
+   .highlights .highImg img
+   {
+     width: 90%;
+   }
+
+   .highlights .highContent h1
+   {
+      font-size: 33px;
+      margin-bottom: 10px;
+   }
+
+   .highlights .highBtn button
+   {
+      font-size: 18px;
+      padding: 10px 20px; 
+   }
+
+   .cards
+   {
+      flex-direction: column;
+      margin: 30px 15px 0 15px;
+   }
+
+   .imgView
+   {
+      padding: 10px;
+   }
+   footer
+   {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0 10px 0;
+   }
+   .same1
+   {
+      padding: 0 0 5px 10px;
+   }
+}
+
